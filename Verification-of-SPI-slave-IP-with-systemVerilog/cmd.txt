@@ -1,0 +1,7 @@
+vcs -sverilog -ntb_opts dtm -cm line+cond+fsm+tgl Slaveip_Top.sv Slaveip-RTLdesign.v Slaveip_Test.sv Slaveip_Interface.sv Slaveip_Class.sv Slaveip_Coverage.sv
+
+./simv -cm line+cond+fsm+tgl
+
+urg -dir simv.vdb
+
+Verdi –cov –covdir simv.vdb &
